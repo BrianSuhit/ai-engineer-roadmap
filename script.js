@@ -155,35 +155,39 @@ const contentDatabase = {
     // NODO 4
     "open-vs-closed-source-models": {
         title: "Open vs Closed Source Models",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>La distinción principal radica en el acceso a los pesos y la arquitectura.</p><ul><li><strong>Modelos Cerrados (Proprietary):</strong> Como GPT-4 o Gemini, sus pesos son secretos. Se accede a ellos solo vía API, lo que facilita su uso (el proveedor gestiona la infraestructura) y suelen ser los más potentes, pero presentan riesgos de privacidad (envío de datos a terceros), costos por token y falta de control sobre cambios en el modelo.</li><li><strong>Modelos Abiertos (Open Weights):</strong> Como Llama o Mistral, comparten sus pesos públicamente. Permiten ejecución local (privacidad total de datos), personalización profunda (<em>fine-tuning</em>) y control absoluto, pero requieren que el usuario gestione el hardware (GPUs) y la infraestructura de inferencia.</li></ul>"
     },
     "popular-open-source-models": {
         title: "Popular Open Source Models",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>El ecosistema de modelos abiertos ofrece alternativas competitivas a los modelos cerrados, organizados por familias y tamaños:</p><ul><li><strong>Llama (Meta):</strong> El estándar actual, con versiones como Llama 2 y 3 en varios tamaños (8B, 70B, 405B) optimizados para chat y código.</li><li><strong>Mistral & Mixtral (Mistral AI):</strong> Modelos eficientes, destacando <em>Mixtral 8x7B</em> que usa arquitectura <em>Mixture of Experts</em> (MoE) para alto rendimiento con menor costo computacional.</li><li><strong>Gemma (Google) & Phi (Microsoft):</strong> Modelos \"pequeños\" pero potentes (SLMs), ideales para ejecución en dispositivos locales o móviles.</li><li><strong>Qwen & DeepSeek:</strong> Modelos fuertes en razonamiento y codificación.</li></ul>"
     },
     "hugging-face-tasks": {
         title: "Hugging Face Tasks",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Hugging Face organiza los modelos según la \"tarea\" que resuelven, estandarizando las entradas y salidas. Esto permite usar la abstracción <code>pipeline()</code> para intercambiar modelos fácilmente sin reescribir código. Las tareas comunes para un AI Engineer incluyen:</p><ul><li><strong>Text Generation:</strong> Generación de texto autoregresiva (ej. GPT-2, Llama).</li><li><strong>Text-to-Text Generation:</strong> Modelos secuencia-a-secuencia (ej. T5, Flan) para traducción o resumen.</li><li><strong>Text Classification:</strong> Análisis de sentimiento o clasificación de intentos.</li><li><strong>Token Classification:</strong> Reconocimiento de entidades nombradas (NER).</li></ul>"
     },
     "hugging-face-hub": {
         title: "Hugging Face Hub",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Es la plataforma central (\"el GitHub del ML\") que aloja más de 800,000 modelos, datasets y demos (<em>Spaces</em>). Sirve como el repositorio principal donde la comunidad comparte modelos preentrenados y sus <em>tokenizers</em> asociados. Facilita la descarga, versionado y descubrimiento de modelos, siendo el punto de partida estándar para buscar cualquier modelo abierto (como Llama 3 o BERT) y sus tarjetas de modelo (<em>model cards</em>) con documentación técnica.</p>"
     },
     "inference-sdk": {
         title: "Inference SDK",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Se refiere a las herramientas que permiten consumir modelos alojados en el Hub sin necesidad de descargarlos ni ejecutarlos en hardware local. A través de la <em>Inference API</em> de Hugging Face (y su cliente en Python/JS), los desarrolladores pueden enviar <em>prompts</em> a modelos masivos alojados en la nube de Hugging Face y recibir respuestas instantáneas, ideal para prototipado rápido y aplicaciones ligeras que no quieren gestionar GPUs.</p>"
     },
     "transformers-js": {
         title: "Transformers.js",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Es una librería que permite ejecutar modelos Transformers directamente en el navegador web o en entornos Node.js, utilizando el formato ONNX. Esto habilita la <strong>IA del lado del cliente</strong> (<em>client-side AI</em>): los modelos se ejecutan en el dispositivo del usuario final, garantizando privacidad y cero latencia de red, sin depender de un servidor backend para la inferencia.</p>"
     },
     "ollama-models": {
         title: "Ollama Models",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Ollama es un <em>framework</em> diseñado para simplificar drásticamente la ejecución local de LLMs. Permite correr modelos potentes (como Llama 3 o DeepSeek) en una sola línea de comando (ej. <code>ollama run llama3</code>). Utiliza internamente técnicas de cuantización (generalmente formato GGUF) para comprimir los modelos, haciéndolos viables en hardware de consumo (como laptops con poca VRAM) sin configuraciones complejas de Python o CUDA.</p>"
     },
     "ollama-sdk": {
         title: "Ollama SDK",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Es la biblioteca (disponible en Python y JavaScript) que permite integrar Ollama en aplicaciones. En lugar de usar la terminal, el SDK conecta tu código con el servidor local de Ollama. Permite enviar <em>prompts</em>, gestionar el historial de chat y recibir respuestas en <em>streaming</em> dentro de tu propio software, facilitando la creación de agentes o chatbots locales que funcionan 100% offline.</p>"
+    },
+    "multimodal-tester": {
+        title: "Multimodal tester",
+        body: "<p>implementacion de un tester de multiples modelos de texto open source a la vez con el mismo prompt<br><br><a href=\"https://github.com/BrianSuhit/03-multi-modal-tester\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
 
     // NODO 5
@@ -245,6 +249,10 @@ const contentDatabase = {
     // NODO 7
     "google-embedding-models": {
         title: "Google Embedding Models",
+        body: "<p>Contenido pendiente de redacción...</p>"
+    },
+        "7-pricing-considerations": {
+        title: "Pricing considerations",
         body: "<p>Contenido pendiente de redacción...</p>"
     },
 
