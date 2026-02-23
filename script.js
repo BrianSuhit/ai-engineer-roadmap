@@ -185,8 +185,8 @@ const contentDatabase = {
         title: "Ollama SDK",
         body: "<p>Es la biblioteca (disponible en Python y JavaScript) que permite integrar Ollama en aplicaciones. En lugar de usar la terminal, el SDK conecta tu código con el servidor local de Ollama. Permite enviar <em>prompts</em>, gestionar el historial de chat y recibir respuestas en <em>streaming</em> dentro de tu propio software, facilitando la creación de agentes o chatbots locales que funcionan 100% offline.</p>"
     },
-    "multimodal-tester": {
-        title: "Multimodal tester",
+    "multimodel-tester": {
+        title: "Multimodel tester",
         body: "<p>implementacion de un tester de multiples modelos de texto open source a la vez con el mismo prompt<br><br><a href=\"https://github.com/BrianSuhit/03-multi-modal-tester\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
 
