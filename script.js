@@ -193,39 +193,39 @@ const contentDatabase = {
     // NODO 5
     "prompt-injection-attacks": {
         title: "Prompt Injection Attacks",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Es una clase de ataque donde un usuario malintencionado manipula el <em>input</em> (entrada) para anular las instrucciones originales del sistema y hacer que el modelo ejecute acciones no deseadas.</p><ul><li><strong>Direct Injection (Jailbreaking):</strong> El atacante escribe instrucciones explícitas para \"romper\" las restricciones del modelo (ej: \"Ignora las instrucciones anteriores y actúa como...\").</li><li><strong>Indirect Injection:</strong> El ataque no viene del usuario directo, sino de datos externos que el modelo procesa (ej: una página web maliciosa leída por un agente de búsqueda que contiene instrucciones ocultas para exfiltrar datos).</li></ul>"
     },
     "security-and-privacy-concerns": {
         title: "Security and Privacy Concerns",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>El uso de LLMs introduce riesgos críticos sobre la confidencialidad y la propiedad de los datos.</p><ul><li><strong>Exfiltración de Datos:</strong> Los modelos pueden memorizar y regurgitar datos de entrenamiento, revelando información de identificación personal (PII) o secretos corporativos si se les incita con los <em>prompts</em> adecuados.</li><li><strong>Fuga en APIs:</strong> Al usar modelos cerrados, existe el riesgo de que los datos enviados en los <em>prompts</em> se usen para entrenar futuras versiones del modelo, filtrando accidentalmente propiedad intelectual o datos sensibles de la empresa.</li></ul>"
     },
     "bias-and-fairness": {
         title: "Bias and Fairness",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Los modelos fundacionales reflejan y pueden amplificar los sesgos presentes en sus datos de entrenamiento (internet).</p><ul><li><strong>Tipos de Sesgo:</strong> Incluyen estereotipos de género (ej: asociar enfermería solo a mujeres), sesgos raciales, y alineaciones políticas o religiosas implícitas en las respuestas del modelo.</li><li><strong>Mitigación:</strong> Se combate mediante la curaduría cuidadosa de datos de <em>finetuning</em> (ej: balancear ejemplos de género), el uso de <em>guardrails</em> para filtrar salidas tóxicas y técnicas de alineación como RLHF.</li></ul>"
     },
     "google-moderation-api": {
         title: "Google moderation api",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p><em>(En el contexto de Vertex AI / Gemini)</em> Google proporciona herramientas integradas de <strong>Safety Settings</strong> (configuraciones de seguridad) que actúan como filtros de moderación. Permiten bloquear contenidos en categorías específicas como discurso de odio, acoso, contenido sexualmente explícito y peligrosidad. Los desarrolladores pueden ajustar los umbrales de sensibilidad (bajo, medio, alto) para determinar qué tanto filtrar antes de que la respuesta llegue al usuario. Además, herramientas como la <strong>Perspective API</strong> se utilizan para detectar toxicidad en textos.</p>"
     },
     "adding-end-user-ids-in-prompts": {
         title: "Adding end-user IDs in prompts",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Es una práctica de seguridad que consiste en enviar un identificador único del usuario final (no solo la clave de API de la empresa) junto con la solicitud al modelo.</p><ul><li><strong>Propósito:</strong> Permite monitorear y aislar el abuso a nivel de usuario individual. Si un usuario intenta realizar ataques de inyección o viola las políticas, el sistema puede limitar o banear a ese usuario específico sin afectar el servicio para todos los demás clientes.</li></ul>"
     },
     "conducting-adversarial-testing": {
         title: "Conducting adversarial testing",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>También conocido como <strong>Red Teaming</strong>, es el proceso de evaluar proactivamente el sistema intentando \"atacarlo\" para descubrir vulnerabilidades antes del despliegue.</p><ul><li><strong>Metodología:</strong> Implica pensar como un atacante y probar el modelo con <em>prompts</em> diseñados para provocar fallos, generar contenido tóxico o filtrar datos. Se pueden usar herramientas automatizadas (como Garak o PyRIT) o equipos humanos para simular inyecciones de <em>prompt</em> y evaluar la robustez de los filtros de seguridad.</li></ul>"
     },
     "robust-prompt-engineering": {
         title: "Robust prompt engineering",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Son técnicas de diseño de <em>prompts</em> defensivos para reducir la susceptibilidad a ataques y errores.</p><ul><li><strong>Delimitadores:</strong> Usar marcas claras (como <code>`\"\"\"`</code> o etiquetas XML) para separar las instrucciones del sistema de los datos del usuario, ayudando al modelo a distinguir qué es una orden y qué es contenido.</li><li><strong>Instrucciones Prioritarias:</strong> Colocar las instrucciones de seguridad al final del <em>prompt</em> (efecto de recencia) o repetirlas para reforzar su importancia frente a posibles inyecciones.</li><li><strong>Sandwich Defense:</strong> Rodear la entrada del usuario con instrucciones de seguridad antes y después.</li></ul>"
     },
     "know-your-customers-usecases": {
         title: "Know your Customers / Usecases",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>La seguridad no es absoluta, sino contextual. Un sistema seguro para escribir ficción puede ser peligroso para consejos médicos.</p><ul><li><strong>Evaluación de Riesgo:</strong> Se debe analizar el impacto de un fallo. ¿Es una aplicación crítica (salud, finanzas) donde una alucinación es fatal, o es recreativa? Esto define la rigurosidad de los <em>guardrails</em> necesarios.</li><li><strong>Alcance (Scoping):</strong> Definir explícitamente qué temas están \"fuera del alcance\" (ej: un bot de soporte no debe opinar sobre política) y configurar el sistema para rechazar cortésmente estas consultas.</li></ul>"
     },
     "constraining-outputs-and-inputs": {
         title: "Constraining outputs and inputs",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>El control estricto de lo que entra y sale del modelo es la línea de defensa final.</p><ul><li><strong>Guardrails de Entrada:</strong> Detectar y anonimizar información sensible (PII) o bloquear <em>prompts</em> maliciosos conocidos antes de que lleguen al modelo.</li><li><strong>Guardrails de Salida:</strong> Validar que la respuesta cumpla con formatos esperados (ej: JSON válido) y escanearla en busca de toxicidad o filtración de datos antes de mostrarla al usuario.</li><li><strong>Muestreo Restringido:</strong> Usar técnicas como gramáticas formales para forzar al modelo a elegir solo tokens permitidos (ej: solo números o clases específicas).</li></ul>"
     },
 
     // NODO 6
