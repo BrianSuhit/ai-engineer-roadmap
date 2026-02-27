@@ -231,19 +231,19 @@ const contentDatabase = {
     // NODO 6
     "semantic-search": {
         title: "Semantic Search",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>A diferencia de la búsqueda por palabras clave (<i>lexical search</i>) que busca coincidencias exactas de texto, la búsqueda semántica utiliza embeddings para recuperar información basada en el <strong>significado</strong>.</p><ul><li><strong>Funcionamiento:</strong> Tanto la consulta del usuario como los documentos se convierten en vectores (embeddings) en el mismo espacio multidimensional. El sistema recupera los documentos cuyos vectores están más \"cerca\" de la consulta (vecinos más cercanos), utilizando métricas como la similitud del coseno.</li><li><strong>Ventaja:</strong> Permite encontrar resultados relevantes incluso si no comparten las mismas palabras (por ejemplo, relacionar \"coche\" con \"automóvil\"), manejando mejor sinónimos, errores tipográficos y barreras lingüísticas.</li></ul>"
     },
     "data-classification": {
         title: "Data Classification",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Los embeddings transforman texto no estructurado en características numéricas densas (<i>features</i>) que pueden ser utilizadas por algoritmos de clasificación tradicionales.</p><ul><li><strong>Clasificación Supervisada:</strong> En lugar de entrenar un modelo gigante desde cero, se pueden generar embeddings de los textos (usando un modelo preentrenado \"congelado\") y entrenar un clasificador ligero (como una regresión logística) sobre estos vectores para tareas como análisis de sentimiento o detección de spam.</li><li><strong>Zero-Shot Classification:</strong> Permite clasificar datos sin entrenamiento previo. Se crean embeddings de las descripciones de las etiquetas (ej: \"un correo de ventas\") y se comparan con el embedding del documento; la etiqueta con mayor similitud semántica es la elegida.</li></ul>"
     },
     "recommendation-systems": {
         title: "Recommendation Systems",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>Los sistemas de recomendación utilizan embeddings para representar ítems (productos, canciones, artículos) como vectores, donde la cercanía espacial indica similitud en el gusto o comportamiento del usuario.</p><ul><li><strong>Filtrado Colaborativo Neural:</strong> Se puede tratar el historial de un usuario (ej: una playlist de canciones) como si fuera una \"fración\" y los ítems como \"palabras\", entrenando modelos tipo word2vec para aprender qué ítems tienden a aparecer juntos.</li><li><strong>Recuperación:</strong> Al igual que en la búsqueda, el sistema recomienda ítems cuyos vectores son matemáticamente similares a los vectores de los ítems que el usuario ya ha consumido o calificado positivamente.</li></ul>"
     },
     "anomaly-detection": {
         title: "Anomaly Detection",
-        body: "<p>Contenido pendiente de redacción...</p>"
+        body: "<p>La detección de anomalías con embeddings se basa en identificar puntos de datos que se alejan significativamente de la distribución normal en el espacio vectorial.</p><ul><li><strong>Outliers Semánticos:</strong> Si la mayoría de los datos forman clústeres densos en el espacio de embeddings, un dato cuyo vector está aislado o muy distante de estos grupos se considera una anomalía.</li><li><strong>Usos:</strong> Es útil para detectar datos de baja calidad, entradas maliciosas (como inyecciones de prompt inusuales) o errores en datasets, ya que estos inputs suelen tener representaciones vectoriales que no encajan con el patrón de los datos legítimos o comunes.</li></ul>"
     },
 
     // NODO 7
