@@ -28,7 +28,7 @@ Este repositorio evolucionará siguiendo esta ruta crítica:
 - [X] **4 - Open Source AI**
 - [X] **5 - AI Safety and Ethics**
 - [X] **6 - What are Embeddings**
-- [ ] **7 - OpenAI Embeddings API**
+- [X] **7 - OpenAI Embeddings API**
 - [ ] **8 - Open-Source Embeddings**
 - [ ] **9 - Vector Databases**
 - [ ] **10 - What are RAGs?**

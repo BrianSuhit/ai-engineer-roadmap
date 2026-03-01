@@ -240,11 +240,15 @@
     "__comment_NODO_7__": "--- GOOGLE EMBEDDINGS API ---",
     "google-embedding-models": {
         "title": "Google Embedding Models",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Google ofrece sus modelos de embeddings a través de la plataforma <strong>Vertex AI</strong>, proporcionando capacidades tanto para texto como para datos multimodales.</p><ul><li><strong>Capacidades:</strong> Los modelos permiten generar <em>embeddings</em> (representaciones vectoriales numéricas) para realizar tareas como búsqueda semántica, clasificación, agrupación (<em>clustering</em>) y detección de valores atípicos (outliers).</li><li><strong>Tipos de Embeddings:</strong> Vertex AI soporta <strong>Text embeddings</strong> (para capturar el significado semántico de textos) y <strong>Multimodal embeddings</strong>, que permiten generar vectores para imágenes y videos en el mismo espacio semántico, facilitando la búsqueda cruzada entre modalidades (por ejemplo, buscar imágenes usando texto).</li><li><strong>Model Garden:</strong> Además de los modelos propietarios de Google, Vertex AI aloja modelos abiertos optimizados, como la familia <strong>E5 (Multilingual E5 Small y Large)</strong>, accesibles a través del Model Garden para tareas de <em>embedding</em> multilingüe.</li></ul>"
     },
     "7-pricing-considerations": {
         "title": "Pricing considerations",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>El costo de utilizar APIs de embeddings implica varios factores críticos que deben evaluarse antes de escalar una aplicación.</p><ul><li><strong>Costos de Generación:</strong> El modelo de precios suele basarse en el uso (pay-as-you-go). Generar embeddings cuesta dinero por cada solicitud, lo cual puede volverse significativo si tus datos cambian frecuentemente y requieren una regeneración constante de los vectores (re-indexing).</li><li><strong>Costos de Infraestructura Asociada:</strong> El gasto no termina en la generación; almacenar millones de vectores en una base de datos vectorial (<em>vector database</em>) y ejecutar consultas de búsqueda sobre ellos suele ser costoso. A menudo, el gasto en la base de datos vectorial puede representar una fracción considerable (ej. un quinto o la mitad) del presupuesto total de inferencia.</li><li><strong>Comparación:</strong> Aunque las APIs gestionadas ahorran costos de ingeniería, a gran escala puede ser más económico alojar modelos de embeddings abiertos (como los disponibles en Model Garden) en infraestructura propia si el volumen de datos es masivo.</li></ul>"
+    },
+    "semantic-embeddings-engine": {
+        "title": "Semantic Embeddings Engine",
+        "body": "<p>Una aplicación en Python que demuestra la búsqueda semántica. Genera embeddings para un conjunto de documentos utilizando la API de Gemini y permite buscar una consulta encontrando los documentos más similares basados en productos punto de vectores.<br><br><a href=\"https://github.com/BrianSuhit/node-7-semantic-embeddings-engine\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
     "__comment_NODO_8__": "--- OPEN-SOURCE EMBEDDINGS ---",
     "sentence-transformers": {
