@@ -253,11 +253,15 @@
     "__comment_NODO_8__": "--- OPEN-SOURCE EMBEDDINGS ---",
     "sentence-transformers": {
         "title": "Sentence Transformers",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es un framework de Python (y una arquitectura de modelos conocida como SBERT) diseñado para generar embeddings de texto densos y eficientes.</p><p>Arquitectura: Modifica modelos tipo BERT utilizando redes siamesas (bi-encoders) para procesar oraciones de manera independiente y generar vectores de tamaño fijo mediante una capa de pooling (promedio de los embeddings de los tokens).</p><p>Ventaja: Soluciona el cuello de botella computacional de los modelos BERT originales (cross-encoders), que requerían procesar cada par de oraciones juntas para medir su similitud. SBERT permite calcular similitudes semánticas (como la similitud del coseno) masivamente rápido, habilitando la búsqueda semántica y el clustering en tiempo real.</p><p>Uso: Es el estándar de la industria para cargar y utilizar modelos de embeddings abiertos en código.</p>"
     },
     "models-on-hugging-face": {
         "title": "Models on Hugging Face",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Hugging Face actúa como el repositorio central para descubrir y descargar modelos de embeddings de código abierto (\"open weights\").</p><p>Selección (MTEB): La referencia principal para elegir un modelo es el MTEB Leaderboard (Massive Text Embedding Benchmark), que clasifica los modelos según su rendimiento en tareas como recuperación, clasificación y clustering en más de 100 idiomas.</p><p>Modelos Populares:</p><ul><li> all-mpnet-base-v2: Un modelo estándar muy utilizado por su equilibrio entre velocidad y calidad para embeddings de propósito general.</li><li> all-MiniLM-L6-v2: Optimizado para alta velocidad y baja latencia.</li><li> Familias BGE y GTE: Modelos más recientes (como BAAI/bge-small-en o thenlper/gte-small) que suelen encabezar los rankings de rendimiento para tareas de recuperación (RAG) y clustering.</li><li> E5: Modelos optimizados para embeddings multilingües.</li></ul>"
+    },
+    "local-embeddings-tester": {
+        "title": "Local Embeddings Tester",
+        "body": "<p>Implementación de un motor de vectorización local utilizando la librería sentence-transformers y el modelo open-source all-MiniLM-L6-v2.<br><br><a href=\"https://github.com/BrianSuhit/08-local-embeddings-tester\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
     "__comment_NODO_9__": "--- VECTOR DATABASES ---",
     "purpose-and-functionality": {
