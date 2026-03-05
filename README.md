@@ -19,7 +19,7 @@ El roadmap se divide en un sistema jerárquico manual:
 
 ---
 
-## 🔜 Próximos Pasos (Roadmap)
+## 🔜 Próximos Pasos
 Este repositorio evolucionará siguiendo esta ruta crítica:
 
 - [X] **1 - Introduction**
