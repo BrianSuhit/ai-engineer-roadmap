@@ -32,11 +32,10 @@ Este repositorio evolucionará siguiendo esta ruta crítica:
 - [X] **8 - Open-Source Embeddings**
 - [ ] **9 - Vector Databases**
 - [ ] **10 - What are RAGs?**
-- [ ] **11 - OpenAI Response API**
-- [ ] **12 - AI Agents**
-- [ ] **13 - Model Context Protocol (MCP)**
-- [ ] **14 - Multimodal AI**
-- [ ] **15 - Development Tools**
+- [ ] **11 - AI Agents**
+- [ ] **12 - Model Context Protocol (MCP)**
+- [ ] **13 - Multimodal AI**
+- [ ] **14 - Development Tools**
 
 ---
 **Autor:** Brian Suhit  

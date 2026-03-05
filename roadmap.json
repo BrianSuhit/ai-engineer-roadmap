@@ -317,7 +317,7 @@
         "title": "RAGFlow",
         "body": "<p>Contenido pendiente de redacción...</p>"
     },
-    "__comment_NODO_12__": "--- AI AGENTS ---",
+    "__comment_NODO_11__": "--- AI AGENTS ---",
     "ai-agent": {
         "title": "AI Agent",
         "body": "<p>Contenido pendiente de redacción...</p>"
@@ -350,7 +350,7 @@
         "title": "Google ADK",
         "body": "<p>Contenido pendiente de redacción...</p>"
     },
-    "__comment_NODO_13__": "--- MODEL CONTEXT PROTOCOL (MCP) ---",
+    "__comment_NODO_12__": "--- MODEL CONTEXT PROTOCOL (MCP) ---",
     "mcp-host": {
         "title": "MCP Host",
         "body": "<p>Contenido pendiente de redacción...</p>"
@@ -387,7 +387,7 @@
         "title": "Connect to Remote Server",
         "body": "<p>Contenido pendiente de redacción...</p>"
     },
-    "__comment_NODO_14__": "--- MULTIMODAL AI ---",
+    "__comment_NODO_13__": "--- MULTIMODAL AI ---",
     "multimodal-ai-usecases": {
         "title": "Multimodal AI Usecases",
         "body": "<p>Contenido pendiente de redacción...</p>"
@@ -440,7 +440,7 @@
         "title": "LlamaIndex for Multi-modal Apps",
         "body": "<p>Contenido pendiente de redacción...</p>"
     },
-    "__comment_NODO_15__": "--- DEVELOPMENT TOOLS ---",
+    "__comment_NODO_14__": "--- DEVELOPMENT TOOLS ---",
     "ai-code-editors": {
         "title": "AI Code Editors",
         "body": "<p>Contenido pendiente de redacción...</p>"
