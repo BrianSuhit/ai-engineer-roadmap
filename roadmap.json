@@ -266,19 +266,23 @@
     "__comment_NODO_9__": "--- VECTOR DATABASES ---",
     "purpose-and-functionality": {
         "title": "Purpose and Functionality",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Una base de datos vectorial es un sistema especializado diseñado para almacenar, gestionar e indexar datos no estructurados (texto, imágenes, audio) en forma de <strong>embeddings</strong> (vectores numéricos de alta dimensión).</p><ul><li><strong>Propósito:</strong> A diferencia de las bases de datos tradicionales que buscan coincidencias exactas, su función principal es permitir la <strong>búsqueda semántica</strong>, encontrando datos que tengan un significado similar a la consulta, no solo las mismas palabras clave.</li><li><strong>Funcionalidad:</strong> Actúan como la \"memoria a largo plazo\" para aplicaciones de IA (como RAG), permitiendo almacenar conocimiento externo y recuperarlo eficientemente para aumentar el contexto de un LLM. Además de los vectores, almacenan <strong>metadatos</strong> y el contenido original (payload) para reconstruir el contexto tras la búsqueda. Permiten operaciones CRUD (crear, leer, actualizar, borrar) y filtrado de metadatos sin necesidad de reconstruir todo el índice constantemente.</li></ul>"
     },
     "chroma": {
         "title": "Chroma",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es una base de datos vectorial de código abierto diseñada para facilitar la construcción de aplicaciones de IA con embeddings. Al igual que otras herramientas de su categoría (como Pinecone, Weaviate o Milvus), su función es almacenar los embeddings generados por los modelos y proporcionar una interfaz eficiente para realizar búsquedas de similitud semántica sobre ellos. Se integra en flujos de trabajo de ingeniería de IA para gestionar la persistencia del estado y el conocimiento de los agentes o sistemas RAG.</p>"
     },
     "indexing-embeddings": {
         "title": "Indexing Embeddings",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Indexar es el proceso de organizar los vectores de manera que la búsqueda sea rápida y eficiente, evitando tener que comparar la consulta con cada uno de los millones de vectores almacenados (fuerza bruta).</p><ul><li><strong>Compromisos (Trade-offs):</strong> Elegir un índice implica balancear la velocidad de búsqueda (latencia), la precisión (recall), la memoria requerida y el tiempo de construcción del índice.</li><li><strong>Algoritmos Comunes:</strong><ul><li><strong>HNSW (Hierarchical Navigable Small World):</strong> Crea un grafo multicapa donde los nodos son vectores; es muy rápido y preciso, estándar en la industria (usado en FAISS y Milvus).</li><li><strong>IVF (Inverted File Index):</strong> Usa clustering (como K-means) para agrupar vectores similares y reducir el espacio de búsqueda.</li><li><strong>Quantization (Product Quantization):</strong> Comprime los vectores reduciendo su precisión para ahorrar memoria y acelerar la búsqueda con una mínima pérdida de calidad.</li></ul></li></ul>"
     },
     "performing-similarity-search": {
         "title": "Performing Similarity Search",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es el proceso de recuperar los vectores más cercanos (vecinos) a un vector de consulta (query embedding) en el espacio multidimensional.</p><ul><li><strong>Métricas de Distancia:</strong> Se utilizan fórmulas matemáticas para medir la \"cercanía\". Las más comunes son la <strong>Similitud del Coseno</strong> (mide el ángulo, ideal para similitud semántica, rango -1 a 1), el <strong>Producto Punto</strong> y la <strong>Distancia Euclidiana</strong> (L2).</li><li><strong>k-NN vs. ANN:</strong><ul><li><strong>k-NN (k-Nearest Neighbors):</strong> Búsqueda exacta. Compara la consulta contra <em>todos</em> los vectores. Es precisa pero lenta y costosa computacionalmente a gran escala.</li><li><strong>ANN (Approximate Nearest Neighbors):</strong> Es el estándar en producción. Utiliza los índices (como HNSW) para encontrar los vecinos más cercanos de forma aproximada pero extremadamente rápida (milisegundos), sacrificando una mínima fracción de precisión por velocidad y escalabilidad.</li></ul></li></ul>"
+    },
+    "vector-db": {
+        "title": "Vector Databases",
+        "body": "<p>Creación de un sistema de almacenamiento semántico persistente utilizando ChromaDB.<br><br><a href=\"https://github.com/BrianSuhit/09-vector-db\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
     "__comment_NODO_10__": "--- WHAT ARE RAGS? ---",
     "chunking": {
