@@ -282,7 +282,7 @@
     },
     "vector-db": {
         "title": "Vector Databases",
-        "body": "<p>Creación de un sistema de almacenamiento semántico persistente utilizando ChromaDB.<br><br><a href=\"https://github.com/BrianSuhit/09-vector-db\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
+        "body": "<p>Creación de un sistema de almacenamiento semántico persistente utilizando ChromaDB.<br><br><a href=\"https://github.com/BrianSuhit/09-vector-database\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
     },
     "__comment_NODO_10__": "--- WHAT ARE RAGS? ---",
     "chunking": {
