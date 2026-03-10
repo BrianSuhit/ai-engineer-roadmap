@@ -287,40 +287,45 @@
     "__comment_NODO_10__": "--- WHAT ARE RAGS? ---",
     "chunking": {
         "title": "Chunking",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es el proceso de dividir documentos largos en segmentos más pequeños y manejables antes de convertirlos en <em>embeddings</em>,. Es un paso crítico porque los modelos de <em>embedding</em> y los LLMs tienen límites en su ventana de contexto (cantidad máxima de tokens). Además, dividir el texto ayuda a recuperar información específica con mayor precisión, evitando que conceptos relevantes se diluyan en vectores de documentos muy extensos,. Existen estrategias como el <em>chunking</em> de tamaño fijo, recursivo o semántico.</p>"
     },
     "embedding": {
         "title": "Embedding",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la transformación de los fragmentos de texto (<em>chunks</em>) y de la consulta del usuario en representaciones numéricas vectoriales (listas de números de punto flotante),. Estos vectores capturan el significado semántico del texto, de modo que fragmentos con significados similares se ubiquen cerca unos de otros en un espacio multidimensional, permitiendo la búsqueda por significado y no solo por palabras clave.</p>"
     },
     "retrieval-process": {
         "title": "Retrieval Process",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la etapa de recuperación de información. Cuando el usuario realiza una consulta, esta se convierte en un vector y se compara con los vectores almacenados en la base de datos,. Se utilizan algoritmos de búsqueda de vecinos más cercanos (como k-NN o ANN) para identificar y extraer los <em>k</em> fragmentos (<em>chunks</em>) que tienen mayor similitud semántica (menor distancia matemática) con la pregunta del usuario.</p>"
     },
     "generation": {
         "title": "Generation",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la fase final donde el LLM sintetiza la respuesta. El sistema combina la consulta original del usuario con los fragmentos de texto recuperados (<em>retrieved context</em>) dentro de un <em>prompt</em> estructurado,. El modelo utiliza esta información externa como \"verdad terreno\" para generar una respuesta coherente y contextualizada, un proceso conocido como <em>grounded generation</em>, lo que ayuda a reducir significativamente las alucinaciones.</p>"
     },
     "using-sdks-directly": {
         "title": "Using SDKs Directly",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Se refiere a la implementación de flujos RAG escribiendo manualmente la lógica de conexión (el código \"pegamento\") utilizando directamente las APIs de los modelos (como OpenAI) y bases de datos vectoriales, sin intermediarios. Este enfoque ofrece mayor control y transparencia sobre el flujo de datos y evita la complejidad o las abstracciones innecesarias que pueden introducir los frameworks de orquestación, permitiendo optimizar el rendimiento y la depuración.</p>"
     },
     "langchain": {
         "title": "Langchain",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es un framework de orquestación popular que proporciona abstracciones modulares para construir aplicaciones LLM complejas. Permite encadenar (<em>chain</em>) componentes como <em>prompts</em>, modelos, memoria y herramientas de recuperación de manera estandarizada. Simplifica la integración de fuentes de datos externas y la gestión del flujo de trabajo de RAG mediante componentes preconstruidos.</p>"
     },
     "llama-index": {
         "title": "Llama Index",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es un framework de datos diseñado para conectar fuentes de datos personalizadas con LLMs. Se utiliza frecuentemente en arquitecturas RAG para facilitar la ingestión, estructuración y recuperación de datos privados, y también incluye herramientas para evaluar la calidad de las respuestas generadas (como la fidelidad del contexto).</p>"
     },
     "haystack": {
         "title": "Haystack",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es un framework de orquestación de extremo a extremo para construir <em>pipelines</em> de procesamiento de lenguaje natural (NLP) y búsqueda semántica,. A diferencia de librerías más generalistas, se enfoca en definir flujos de trabajo claros para sistemas de búsqueda y respuesta a preguntas (QA), facilitando la implementación de arquitecturas RAG robustas.</p>"
     },
     "ragflow": {
         "title": "RAGFlow",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>RAGFlow es un motor de Generación Aumentada por Recuperación (RAG) de código abierto diseñado para optimizar el flujo de trabajo entre documentos complejos y modelos de lenguaje (LLM). Su enfoque principal es la comprensión profunda de documentos, permitiendo que las IAs generen respuestas precisas y verificables basadas en datos reales de una empresa.</p>"
     },
+    "rag-system": {
+        "title": "RAG System",
+        "body": "<p>Desarrollo de un sistema de Generación Aumentada por Recuperación (RAG) completo. <br><br><a href=\"https://github.com/BrianSuhit/10-rag-system\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a></p>"
+    },
+
     "__comment_NODO_11__": "--- AI AGENTS ---",
     "ai-agent": {
         "title": "AI Agent",

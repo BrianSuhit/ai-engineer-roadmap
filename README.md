@@ -31,7 +31,7 @@ Este repositorio evolucionará siguiendo esta ruta crítica:
 - [X] **7 - OpenAI Embeddings API**
 - [X] **8 - Open-Source Embeddings**
 - [X] **9 - Vector Databases**
-- [ ] **10 - What are RAGs?**
+- [X] **10 - What are RAGs?**
 - [ ] **11 - AI Agents**
 - [ ] **12 - Model Context Protocol (MCP)**
 - [ ] **13 - Multimodal AI**
