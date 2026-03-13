@@ -329,35 +329,39 @@
     "__comment_NODO_11__": "--- AI AGENTS ---",
     "ai-agent": {
         "title": "AI Agent",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Un Agente de IA es un sistema autónomo que utiliza un LLM como su \"cerebro\" para razonar, planificar y tomar medidas para lograr un objetivo. A diferencia de un chatbot estándar que solo responde con su conocimiento interno, un agente tiene <strong>agencia</strong>: puede percibir su entorno, decidir qué acciones tomar (como buscar en la web o consultar una base de datos) y usar herramientas para completar tareas complejas que requieren múltiples pasos.</p>"
     },
     "agents-usecases": {
         "title": "Agents Usecases",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Los casos de uso aprovechan la capacidad del agente para interactuar con el mundo real y realizar flujos de trabajo autónomos:</p><ul><li><strong>Asistente de Investigación:</strong> Busca papers, filtra los relevantes, resume hallazgos y genera informes con citas.</li><li><strong>Coding Agent:</strong> Navega por un repositorio de código, lee archivos, edita líneas y ejecuta tests (ej. SWE-agent).</li><li><strong>Automatización de Flujos (RPA):</strong> Planifica viajes, reserva vuelos consultando APIs de aerolíneas y gestiona calendarios.</li><li><strong>Análisis de Datos:</strong> Genera consultas SQL para una base de datos, ejecuta la consulta y analiza los resultados para responder preguntas de negocio.</li></ul>"
     },
     "react-prompting": {
         "title": "ReAct Prompting",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la técnica fundamental (Reason + Act) que permite a los agentes pensar antes de actuar. El agente opera en un bucle continuo de tres pasos:</p><ol><li><strong>Thought (Pensamiento):</strong> El modelo razona sobre el estado actual y decide qué hacer (\"Necesito buscar el precio del producto\").</li><li><strong>Action (Acción):</strong> El modelo genera un comando o llamada a una herramienta específica (\"Search[producto]\").</li><li><strong>Observation (Observación):</strong> El sistema ejecuta la acción y devuelve el resultado al modelo (\"El precio es $500\"). Este ciclo se repite hasta que el agente determina que puede dar una respuesta final.</li></ol>"
     },
     "manual-implementation": {
         "title": "Manual Implementation",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Implementar un agente \"desde cero\" (sin frameworks como LangChain) implica construir un bucle de control (<code>while loop</code>) en código:</p><ol><li>Se envía el <em>prompt</em> con el historial al LLM.</li><li>Se analiza la respuesta del LLM para detectar si quiere ejecutar una acción (ej. detectando un bloque JSON o un comando específico).</li><li>Si hay una acción, el código la ejecuta (ej. llama a una API de clima) y obtiene el resultado.</li><li>El resultado se añade al historial de mensajes como una \"observación\".</li><li>El bucle se repite hasta que el LLM genera una respuesta final para el usuario.</li></ol>"
     },
     "google-functions-tools": {
         "title": "Google Functions / Tools",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p><em>(Equivalente a Function Calling)</em>. Es la capacidad de los modelos (como Gemini en Vertex AI) para conectarse con herramientas externas. Tú defines las herramientas (funciones) como esquemas JSON que describen qué hacen y qué parámetros necesitan (ej. <code>get_weather(location)</code>). El modelo no ejecuta la función, sino que genera una salida estructurada solicitando la ejecución. Tu aplicación intercepta esta solicitud, ejecuta el código real (la herramienta) y devuelve el resultado al modelo para que continúe la conversación.</p>"
     },
     "google-response-api": {
         "title": "Google Response API",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p><em>(Contexto de Gemini/Vertex AI)</em> Se refiere a cómo el modelo estructura su respuesta cuando usa herramientas. En lugar de devolver solo texto, la respuesta de la API puede contener un objeto <code>functionCall</code> que indica el nombre de la función a llamar y los argumentos generados por el modelo. Una vez ejecutada la herramienta, la aplicación debe enviar una nueva solicitud a la API incluyendo un <code>functionResponse</code> con el resultado, permitiendo al modelo incorporar esa información en su respuesta final al usuario.</p>"
     },
     "vertex-ai": {
         "title": "Vertex AI",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la plataforma de desarrollo de IA totalmente gestionada de Google. Proporciona la infraestructura unificada para construir agentes y aplicaciones de IA generativa. Incluye <strong>Model Garden</strong> (para acceder a modelos como Gemini, Claude, Llama), herramientas para <em>finetuning</em>, evaluación de modelos y <strong>Agent Builder</strong>, que facilita la orquestación de agentes, la gestión de herramientas y la implementación de sistemas RAG a escala empresarial con seguridad y cumplimiento normativo.</p>"
     },
     "google-adk": {
         "title": "Google ADK",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p><em>(Mencionado en la documentación de Live API)</em> Se refiere al <strong>Agent Development Kit</strong> (o Gen AI SDK en contextos de hardware/multimodalidad). En el contexto de las capacidades más recientes de Google (como la Live API de Gemini), el ADK proporciona las bibliotecas y herramientas necesarias para gestionar sesiones en tiempo real (audio/video bidireccional) y conectar agentes con entradas de sensores o dispositivos, facilitando la creación de experiencias de agente de baja latencia.</p>"
+    },
+    "11-ai-agent": {
+        "title": "AI Agent",
+        "body": "<p>Creación de un Agente de IA personalizado utilizando la API de Gemini y <em>Function Calling</em>. El sistema integra funciones de Python que exponen la grilla de cursada y el calendario de feriados como herramientas (<code>tools</code>) para el modelo.</p><p>Mediante <em>System Instructions</em>, el agente adquiere personalidad y capacidad de razonamiento, permitiéndole cruzar datos de horarios con días no laborables para responder consultas complejas sobre la agenda académica de forma precisa.</p><br><br><a href=\"https://github.com/BrianSuhit/11-ai-agent\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a>"
     },
     "__comment_NODO_12__": "--- MODEL CONTEXT PROTOCOL (MCP) ---",
     "mcp-host": {
