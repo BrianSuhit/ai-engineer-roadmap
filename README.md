@@ -33,7 +33,7 @@ Este repositorio evolucionará siguiendo esta ruta crítica:
 - [X] **9 - Vector Databases**
 - [X] **10 - What are RAGs?**
 - [X] **11 - AI Agents**
-- [ ] **12 - Model Context Protocol (MCP)**
+- [X] **12 - Model Context Protocol (MCP)**
 - [ ] **13 - Multimodal AI**
 - [ ] **14 - Development Tools**
 
