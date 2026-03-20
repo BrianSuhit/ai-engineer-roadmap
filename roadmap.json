@@ -464,11 +464,11 @@
     "__comment_NODO_14__": "--- DEVELOPMENT TOOLS ---",
     "ai-code-editors": {
         "title": "AI Code Editors",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Son entornos de desarrollo (IDEs) diseñados nativamente o adaptados profundamente para integrar la IA en el flujo de trabajo central, en lugar de tratarla solo como un complemento externo.</p><ul><li><strong>Funcionamiento:</strong> Herramientas como <strong>Cursor</strong> actúan como un \"Host\" para modelos de IA, permitiendo que el asistente tenga acceso de lectura/escritura al sistema de archivos y contexto del proyecto completo. A diferencia de un editor estándar, un AI Editor integra el chat y la generación de código directamente en la interfaz de edición, permitiendo refactorizaciones, corrección de errores y generación de bloques enteros de código (\"agentic editing\") de forma fluida.</li><li><strong>Ventaja:</strong> Ofrecen una experiencia más integrada que los plugins tradicionales, permitiendo \"chatear con tu código\" y ejecutar cambios complejos en múltiples archivos simultáneamente.</li></ul>"
     },
     "code-completion-tools": {
         "title": "Code Completion Tools",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Son asistentes de codificación que funcionan principalmente como motores de \"autocompletado avanzado\" o \"ghost text\" (texto fantasma) dentro del editor.</p><ul><li><strong>Ejemplos:</strong> <strong>GitHub Copilot</strong> es el estándar de la industria. Funciona prediciendo los siguientes tokens del código basándose en el contexto del archivo actual y pestañas abiertas.</li><li><strong>Interacción:</strong> Presentan sugerencias en gris (ghost text) que el desarrollador puede aceptar (usualmente con la tecla Tab) o ignorar siguiendo con la escritura.</li><li><strong>Tecnología:</strong> Utilizan modelos especializados en código (como la familia <strong>Codex</strong> o <strong>StarCoder</strong>) entrenados para entender sintaxis y lógica de programación, permitiendo generar desde líneas simples hasta funciones completas a partir de comentarios o docstrings.</li><li><strong>Impacto:</strong> Aumentan significativamente la productividad en tareas repetitivas, escritura de tests y documentación.</li></ul>"
     },
     "__comment_ADICIONALES__": "--- ENTRADAS ADICIONALES ---",
     "placegolder": {
