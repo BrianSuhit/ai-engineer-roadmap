@@ -34,7 +34,7 @@ Este repositorio evolucionará siguiendo esta ruta crítica:
 - [X] **10 - What are RAGs?**
 - [X] **11 - AI Agents**
 - [X] **12 - Model Context Protocol (MCP)**
-- [ ] **13 - Multimodal AI**
+- [X] **13 - Multimodal AI**
 - [ ] **14 - Development Tools**
 
 ---

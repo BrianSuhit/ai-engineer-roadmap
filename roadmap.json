@@ -407,55 +407,59 @@
     "__comment_NODO_13__": "--- MULTIMODAL AI ---",
     "multimodal-ai-usecases": {
         "title": "Multimodal AI Usecases",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>La IA multimodal permite procesar y razonar sobre múltiples tipos de datos (texto, imágenes, audio) simultáneamente, superando las limitaciones de los modelos de solo texto. Los casos de uso principales incluyen:</p><ul><li><strong>Visual Question Answering (VQA):</strong> Responder preguntas sobre una imagen (ej. \"¿Qué ingredientes hay en esta pizza?\").</li><li><strong>Captioning:</strong> Generar descripciones textuales automáticas para imágenes o videos, útil para accesibilidad y búsqueda.</li><li><strong>Búsqueda Multimodal:</strong> Buscar imágenes usando texto (\"fotos de un cachorro\") o buscar documentos usando imágenes, gracias a espacios vectoriales compartidos.</li><li><strong>Generación Creativa:</strong> Crear imágenes o videos a partir de descripciones textuales (Text-to-Image).</li></ul>"
     },
     "image-understanding": {
         "title": "Image Understanding",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Se basa en convertir imágenes en representaciones numéricas que los modelos pueden procesar. La arquitectura dominante es el <strong>Vision Transformer (ViT)</strong>.</p><ul><li><strong>Patching:</strong> En lugar de tokens de texto, la imagen se divide en \"parches\" (recortes cuadrados) que se aplanan y proyectan linealmente. Estos parches se tratan como una secuencia, similar a las palabras en una oración, permitiendo usar la arquitectura Transformer estándar.</li><li><strong>Encoders:</strong> Modelos como el encoder de imágenes de CLIP aprenden a representar el contenido visual en el mismo espacio semántico que el texto.</li></ul>"
     },
     "image-generation": {
         "title": "Image Generation",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Utiliza modelos (como los de difusión) para crear contenido visual nuevo.</p><ul><li><strong>Inpainting/Outpainting:</strong> Permite a los usuarios editar imágenes existentes seleccionando una región y describiendo los cambios con texto (ej. cambiar un gato triste por uno feliz), colaborando con la IA para refinar el resultado.</li><li><strong>Personalización:</strong> Técnicas para adaptar modelos a estilos específicos o sujetos (como logotipos de marca) mediante fine-tuning o adaptadores.</li></ul>"
     },
     "video-understanding": {
         "title": "Video Understanding",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Implica analizar secuencias de imágenes (frames) a lo largo del tiempo para capturar información temporal y de movimiento.</p><ul><li><strong>Capacidades:</strong> Incluye la detección de objetos en movimiento, el seguimiento (tracking), el reconocimiento de acciones y la respuesta a preguntas sobre el contenido del video (Video Q&A). Los modelos multimodales más recientes pueden procesar video de forma nativa junto con audio y texto para una comprensión holística.</li></ul>"
     },
     "audio-processing": {
         "title": "Audio Processing",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Se refiere a la capacidad de los modelos para entender y analizar señales de audio más allá del habla, como música o sonidos ambientales.</p><ul><li><strong>Comprensión:</strong> Los modelos pueden clasificar sonidos, detectar eventos acústicos o analizar la estructura de piezas musicales.</li><li><strong>Generación:</strong> Incluye la creación de música o efectos de sonido a partir de descripciones textuales (ej. Lyria de Google).</li></ul>"
     },
     "text-to-speech": {
         "title": "Text-to-Speech",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la síntesis de voz artificial a partir de texto. En el contexto de la ingeniería de IA moderna, esto va más allá de la lectura robótica; implica generar voces naturales, con entonación y emoción, o clonar voces específicas para asistentes conversacionales más inmersivos.</p>"
     },
     "speech-to-text": {
         "title": "Speech-to-Text",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>También conocido como Reconocimiento Automático del Habla (ASR). Es el proceso de transcribir audio a texto escrito.</p><ul><li><strong>Aplicaciones:</strong> Es fundamental para interfaces de voz, permitiendo que los usuarios hablen con aplicaciones LLM en lugar de escribir. Las transcripciones se usan luego como <em>prompts</em> para el modelo de lenguaje.</li></ul>"
     },
     "google-vision-api": {
         "title": "Google vision api",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p><em>(Contexto de Generative AI en Vertex AI)</em> Google ofrece capacidades de visión a través de sus modelos multimodales <strong>Gemini</strong> (Pro y Flash) y <strong>Imagen</strong>.</p><ul><li><strong>Capacidades:</strong> Permiten \"Image Understanding\" (describir imágenes, extraer texto/OCR, detectar objetos con bounding boxes) y \"Visual Question Answering\". Los modelos pueden razonar sobre imágenes y video enviados como parte del prompt.</li><li><strong>Imagen:</strong> Es la familia de modelos dedicada específicamente a la generación y edición de imágenes de alta calidad a partir de texto.</li></ul>"
     },
     "dall-e-api": {
         "title": "DALL-E API",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es la API de OpenAI para sus modelos de generación de imágenes. Permite a los desarrolladores integrar la capacidad de crear imágenes originales desde cero basándose en <em>prompts</em> de texto. Además de la generación, soporta funciones de edición como <strong>Inpainting</strong> (editar partes internas de una imagen) y variaciones de imágenes existentes.</p>"
     },
     "whisper-api": {
         "title": "Whisper API",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Es un modelo de reconocimiento de habla (ASR) de código abierto (disponible también vía API) desarrollado para ofrecer transcripciones robustas y traducción al inglés. Es capaz de manejar múltiples idiomas y acentos, convirtiendo audio en texto que luego puede ser procesado por un LLM para tareas posteriores como resumen o análisis.</p>"
     },
     "14-hugging-face-models": {
         "title": "Hugging Face Models",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>Hugging Face aloja miles de modelos multimodales de código abierto. Algunos ejemplos clave explicados en la literatura técnica incluyen:</p><ul><li><strong>CLIP (OpenAI/OpenCLIP):</strong> Conecta texto e imágenes en un espacio vectorial compartido, fundamental para búsqueda semántica y clasificación zero-shot.</li><li><strong>BLIP-2:</strong> Un modelo que une encoders de visión congelados con LLMs usando un componente llamado <em>Q-Former</em>, permitiendo a los LLMs \"ver\" y chatear sobre imágenes de manera eficiente.</li><li><strong>LLaVA e Idefics:</strong> Modelos que siguen instrucciones visuales, proyectando características de imagen en el espacio de embedding del lenguaje.</li></ul>"
     },
     "langchain-for-multimodal-apps": {
         "title": "LangChain for Multimodal Apps",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>LangChain facilita la construcción de aplicaciones multimodales permitiendo encadenar modelos de diferentes tipos.</p><ul><li><strong>Agentes Multimodales:</strong> Se pueden configurar agentes que tengan acceso a \"herramientas\" visuales (como un generador de imágenes o un captioner). El LLM de texto decide cuándo usar estas herramientas basándose en la solicitud del usuario (ej. \"describe esta imagen\" activa la herramienta de captioning).</li><li><strong>Memoria:</strong> Permite gestionar historiales de chat que incluyen referencias a imágenes o archivos multimedia procesados.</li></ul>"
     },
     "llamaindex-for-multi-modal-apps": {
         "title": "LlamaIndex for Multi-modal Apps",
-        "body": "<p>Contenido pendiente de redacción...</p>"
+        "body": "<p>LlamaIndex se especializa en la ingestión e indexación de datos multimodales para sistemas RAG (<strong>Multimodal RAG</strong>).</p><ul><li><strong>Multimodal RAG:</strong> Permite indexar texto e imágenes juntos. Al realizar una consulta, el sistema puede recuperar tanto fragmentos de texto relevantes como imágenes relacionadas para enviarlas a un modelo multimodal (como GPT-4V o Gemini) que sintetice una respuesta completa usando ambas modalidades como contexto.</li></ul>"
+    },
+    "multimodal-vision": {
+        "title": "Multimodal Vision",
+        "body": "<p>Implementación de un análisis de imágenes utilizando las capacidades multimodales de la API de Google (Gemini 3 Flash). El script procesa una imagen local para extraer automáticamente su contexto visual, colores predominantes y objetos detectados.</p><br><br><a href=\"https://github.com/BrianSuhit/13-multimodal-vision\" target=\"_blank\"><strong style=\"color: #FFEE8C;\">link al proyecto</strong></a>"
     },
     "__comment_NODO_14__": "--- DEVELOPMENT TOOLS ---",
     "ai-code-editors": {
